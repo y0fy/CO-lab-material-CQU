@@ -11,3 +11,5 @@
 - 用于在波形图中显示指令ascii码——ascii/
 - 将两个类sram接口转接成axi接口的桥——axi/cpu_axi_interface.v
 
+- 2019年吕学长提供的cpu接axi接口代码（详情参考2019年的ppt）——axi_interface_lv.zip
+

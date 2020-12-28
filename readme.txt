@@ -12,4 +12,9 @@
 ### 更新记录
 
 - 2020/12/23
-  1. 删除原本的soc_sram_func_n4ddr.tar(有错误)。添加完整移植的功能测试和性能测试(test/n4ddr/*)。添加score.xls文件
+  1. 删除原本的soc_sram_func_n4ddr.tar(有错误)。添加完整移植的功能测试和性能测试(test/n4ddr/*)。
+  2. 添加score.xls文件
+- 2020/12/28
+  1. 添加2020硬综讲解ppt
+  2. 添加体系结构cache实验指导书，*doc/其它/Cache实验指导书.pdf*
+  3. 添加*ref_code/axi_interface_lv.zip*
