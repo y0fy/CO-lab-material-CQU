@@ -1,0 +1,33 @@
+#### soft
+
+1. 删减运算指令的测试，coe由原本的15万行减为12万行。
+
+2. ```
+   Section Headers:
+     [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+     [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+     [ 1] .text             PROGBITS        bfc00000 010000 071868 00  AX  0   0 16
+     [ 2] .data             PROGBITS        80000000 090000 000010 00  WA  0   0 16
+     [ 3] .debug_aranges    MIPS_DWARF      00000000 090010 000b40 00      0   0  8
+     [ 4] .pdr              PROGBITS        00000000 090b50 000b20 00      0   0  4
+     [ 5] .debug_line       MIPS_DWARF      00000000 091670 007203 00      0   0  1
+     [ 6] .debug_info       MIPS_DWARF      00000000 098873 001f6d 00      0   0  1
+     [ 7] .debug_abbrev     MIPS_DWARF      00000000 09a7e0 000708 00      0   0  1
+     [ 8] .shstrtab         STRTAB          00000000 09aee8 000061 00      0   0  1
+     [ 9] .symtab           SYMTAB          00000000 09b104 000ef0 10     10 130  4
+     [10] .strtab           STRTAB          00000000 09bff4 000777 00      0   0  1
+   ```
+
+
+#### bram资源
+
+1. 修改inst_ram为131072(2^17)行。
+2. 修改data_ram为4096(2^12)行。
+3. 最终bram使用率为90%
+
+#### 引脚
+
+1. 修改soc_top，删除btn_key、btn_step。
+2. 修改xdc。删除xdc中的`set_false_path -from [get_clocks`
+3. 修改confreg，数码管改为active-low。
+4. 修改soc_top，对swtich输入进行取反（龙芯的板子拨码开关推上是0）。testbench switch初始化为8'h00

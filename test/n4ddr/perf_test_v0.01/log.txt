@@ -1,0 +1,35 @@
+#### soft
+
+使用readelf查看perf_func编译出来的elf文件，画出如下布局。
+
+```
+
+ -------  0x9fc2_766c  _stack  _fdata + MEMSIZE - 32  (bin.lds.S)
+|       |
+|       |
+|       |
+|-------| 0x9fc1_e858  
+|  bss  | 
+|-------| 0x9fc1_9c3c  _edata
+| .data |
+|-------| 0x9fc1_768c  _fdata
+|.rodata|
+|-------| 0x9fc1_32a0  etext
+|       |
+| .text |
+|       |
+ -------  0x9fc0_0000
+```
+
+因此bram大小至少为2^18 = 256KB。地址范围为0x9fc0_0000 ~ 0x9fc3_ffff。
+
+#### bram资源
+
+1. 修改axi_ram为32768(2^16)行，256KB。原本为1MB
+
+#### 引脚
+
+1. 修改soc_top，删除btn_key、btn_step。
+2. 修改xdc。删除xdc中的`set_false_path -from [get_clocks`
+3. 修改confreg，数码管改为active-low。
+4. 修改soc_top，对swtich输入进行取反（龙芯的板子拨码开关推上是0）。testbench switch初始化为8'h00
