@@ -13,3 +13,5 @@
 
 - 2019年吕学长提供的cpu接axi接口代码（详情参考2019年的ppt）——axi_interface_lv.zip
 
+- MIPS固定地址映射模块——mmu/mmu.v
+

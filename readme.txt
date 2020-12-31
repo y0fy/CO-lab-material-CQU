@@ -20,3 +20,7 @@
   3. 添加*ref_code/axi_interface_lv.zip*
 - 2020/12/30
   1. 添加lab4工程
+
+- 2020/12/31
+  1. 更新doc/ppt/2020/硬综讲解1.pptx。增加了许多内容。
+  2. 增加ref_code/mmu模块
