@@ -79,10 +79,7 @@ soc_axi_lite_top #(.SIMULATION(1'b1)) soc_lite
         .led        (led        ),
         .led_rg0    (led_rg0    ),
         .led_rg1    (led_rg1    ),
-        .switch     (switch     ),
-        .btn_key_col(btn_key_col),
-        .btn_key_row(btn_key_row),
-        .btn_step   (btn_step   )
+        .switch     (switch     )
     );   
 
 //"cpu_clk" means cpu core clk

@@ -5,9 +5,10 @@
 ### 目录说明
 
 - 硬综要求：包含硬综任务书、评分标准和报告模板。
-- doc：用于存放硬综涉及到的参考文档和每次讲解用到的PPT。
-- ref_code：用于存放一些发给同学们参考的代码。
+- doc：用于存放硬综涉及到的参考文档和PPT。（**内含必读文档列表**）
+- ref_code：用于存放参考代码。
 - test：包含功能测试和性能测试的目录。
+- ext：存放硬综扩展要求内容，目前只包含tlb测试内容。
 
 ### 更新记录
 
@@ -16,11 +17,15 @@
   2. 添加score.xls文件
 - 2020/12/28
   1. 添加2020硬综讲解ppt
-  2. 添加体系结构cache实验指导书，*doc/其它/Cache实验指导书.pdf*
-  3. 添加*ref_code/axi_interface_lv.zip*
+  2. 添加体系结构cache实验指导书
+  3. 添加吕学长axi参考代码，见*ref_code/axi_interface_lv.zip*
 - 2020/12/30
   1. 添加lab4工程
-
 - 2020/12/31
   1. 更新doc/ppt/2020/硬综讲解1.pptx。增加了许多内容。
   2. 增加ref_code/mmu模块
+- 2021/1/5
+  1. 提供文档阅读引导(doc/readme.txt)
+  2. 更新*test/测试文件说明.pdf*
+  3. 添加TLB相关内容（ppt，示例代码），添加扩展目录ext
+  4. fix`n4ddr/perf_test`testbench代码

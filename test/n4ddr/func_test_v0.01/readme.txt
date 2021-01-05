@@ -6,8 +6,6 @@ cpu132_gettraceÓÃÓÚÉú³ÉtraceÎÄ¼þ£¨ÒÑÌá¹©Éú³ÉºÃµÄtrace£©£¬Í¬Ê±Ò²¿ÉÒÔÉú³É±ÈÌØÁ÷ÉÏ°
 
 *×¢Òâ£ºÒÆÖ²¹ý³Ì¶Ôsoft½øÐÐÁËÐÞ¸Ä£¬¹Ê²»Òª½«´ËÄ¿Â¼ÏÂµÄsoftºÍÔ­À´ÓÃÓÚ·ÂÕæµÄsoft»ìÓÃ¡£*
 
-*×¢Òâ2£º±¾Ä¿Â¼Ö»ÒÆÖ²ÁËsoc_sram£¬ÒÆÖ²soc_axiÊ±³öÏÖÁËFPGA bram×ÊÔ´²»×ãµÄÎÊÌâ£¬Òò´ËÃ»ÓÐ·ÅÈë´ËÄ¿Â¼¡£*
-
 ### Ä¿Â¼½á¹¹
 
 Ä¿Â¼½á¹¹£º
@@ -18,3 +16,9 @@ cpu132_gettraceÓÃÓÚÉú³ÉtraceÎÄ¼þ£¨ÒÑÌá¹©Éú³ÉºÃµÄtrace£©£¬Í¬Ê±Ò²¿ÉÒÔÉú³É±ÈÌØÁ÷ÉÏ°
    |--soft/              : 89¸ö¹¦ÄÜµã²âÊÔ³ÌÐò£¬Ä¬ÈÏÒÑ°üº¬±àÒëºÃµÄ½á¹û
    |        
    |--Readme_First.txt   : ±¾ÎÄµµ
+
+### ÎªÊ²Ã´Ã»ÓÐsoc_axi_func
+
+ÒòÎªsoftÔ­±¾¾ÍÊÇÎªinst_ramºÍdata_ram·Ö¿ª¶ø±àÐ´µÄ¡£ÔÚÁ´½Ó½Å±¾ÖÐ£¬Ö¸¶¨ÁË´úÂë¶ÎÆðÊ¼µØÖ·Îª0xbfc0_0000£¬Êý¾Ý¶ÎÆðÊ¼µØÖ·Îª0x8000_0000¡£ÕâÁ½¸ö¶Î»áÔÚsoc_sramÖÐ±»Ó³Éäµ½inst_ramºÍdata_ram¡£¶øÔÚaxi½Ó¿ÚµÄsocÖÐ£¬Ö»ÓÐÒ»¸öaxi_ram£¬Òò´ËlwºÍswµÄÊ±ºò¾Í¿ÉÄÜÐÞ¸Ä´úÂë¶Î£¬´Ó¶øµ¼ÖÂ´íÎó¡£
+
+¶øÔ­±¾µÄsoc_axi_func¿ÉÒÔÕý³£¹¤×÷ÊÇÒòÎªÔ­±¾µÄaxi_ram×ã¹»´ó£¨262144ÐÐ£¬Ò²¾ÍÊÇ1MB£©£¬ÇÒ¹¦ÄÜ²âÊÔ´úÂëÖÐµÄlw, swµÄµØÖ·±È´úÂë¶Î×îºóÒ»ÌõÖ¸ÁîµÄµØÖ·»¹Òª´ó¡£Òò´Ë²»»á¶Ô´úÂë¶ÎÔì³ÉÓ°Ïì¡£¶øÏÖÔÚÎÒÃÇµÄ°å×Óbram×ÊÔ´²»×ã£¬ÎÞ·¨ÉèÖÃ³ÉÄÇÃ´´ó¡£½â¾ö°ì·¨Ö»ÄÜÊÇÊÖ¶¯ÐÞ¸Ä¹¦ÄÜ²âÊÔ»ã±à´úÂëÖÐ³öÏÖµÄlw, swµÄµØÖ·£¬¹¤³ÌÁ¿±È½Ï´ó¡£ÓÉÓÚÕâ¸öÔ­Òò£¬Ã»ÓÐsoc_axi_func¡£
